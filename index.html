@@ -4,9 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fruit Brust</title>
+    <!-- ---------------------Tailwind and DaysiUI------------------------ -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header></header>
+    <header class="max-w-7xl mx-auto">
+        <!-- --------------------------------------------------Nav bar---------------------------------------- -->
+      <nav class="lg:my-14">
+        <div class="navbar lg:bg-color-primary lg:px-5 h-[110px] rounded-full">
+          
+          <div class="navbar-start hidden lg:block">
+            <ul
+              class="menu menu-horizontal px-1 text-lg text-[#fff] font-lato font-medium"
+            >
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+          
+          <div class="navbar-center lg:flex gap-3">
+            <img class="w-[50px]" src="./images/logo.png" alt="" />
+            <h3 class="text-4xl lg:text-[#fff] font-lato font-bold">
+              Fruit Burst
+            </h3>
+          </div>
+          
+          <div class="navbar-end lg:pr-5 cursor-pointer">
+            <div class="border-2 bg-white rounded-full lg:px-7 hidden lg:block">
+              <input
+                class="text-base text-[#12121266] border-0 outline-none p-3 font-lato rounded-full"
+                type="text"
+                placeholder="Search here"
+              />
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+    </header>
     <main></main>
     <footer></footer>
   </body>
