@@ -19,40 +19,39 @@
       rel="stylesheet"
     />
     <script
-    src="https://kit.fontawesome.com/2a971a071b.js"
-    crossorigin="anonymous"
-  ></script>
+      src="https://kit.fontawesome.com/2a971a071b.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- --------------------------Custom class----------------------- -->
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              backgroundImage: {
-                "bg-team": "url(./images/team.png)",
-              },
-  
-              colors: {
-                "color-primary": "#F85559",
-                clifford: "#da373d",
-              },
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              "bg-team": "url(./images/team.png)",
+            },
+
+            colors: {
+              "color-primary": "#F85559",
+              clifford: "#da373d",
             },
           },
-        };
-      </script>
-      <!-- -----------------------------------Shared style-------------------------- -->
+        },
+      };
+    </script>
+    <!-- -----------------------------------Shared style-------------------------- -->
     <style>
-        .font-lato {
-          font-family: "Lato", sans-serif;
-        }
-      </style>
+      .font-lato {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
   </head>
   <body>
     <header class="max-w-7xl mx-auto">
-        <!-- --------------------------------------------------Nav bar---------------------------------------- -->
+      <!-- --------------------------------------------------Nav bar---------------------------------------- -->
       <nav class="lg:my-14">
         <div class="navbar lg:bg-color-primary lg:px-5 h-[110px] rounded-full">
-          
           <div class="navbar-start hidden lg:block">
             <ul
               class="menu menu-horizontal px-1 text-lg text-[#fff] font-lato font-medium"
@@ -63,14 +62,14 @@
               <li><a>All Fruits</a></li>
             </ul>
           </div>
-          
+
           <div class="navbar-center lg:flex gap-3">
             <img class="w-[50px]" src="./images/logo.png" alt="" />
             <h3 class="text-4xl lg:text-[#fff] font-lato font-bold">
               Fruit Burst
             </h3>
           </div>
-          
+
           <div class="navbar-end lg:pr-5 cursor-pointer">
             <div class="border-2 bg-white rounded-full lg:px-7 hidden lg:block">
               <input
@@ -78,9 +77,43 @@
                 type="text"
                 placeholder="Search here"
               />
-              <i class="fa-solid fa-magnifying-glass" style="color: #0f0f0f;"></i>
+              <i
+                class="fa-solid fa-magnifying-glass"
+                style="color: #0f0f0f"
+              ></i>
             </div>
           </div>
+
+          <!-- -------------------------Nav menu for small device------------------------------ -->
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box text-xs"
+            >
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main></main>
     <footer></footer>
